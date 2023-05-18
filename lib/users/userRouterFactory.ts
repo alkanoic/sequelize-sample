@@ -13,7 +13,7 @@ export const userRouterFactory = () => Router()
 
     .get('/users/:id', (req, res, next) =>
       User.findByPk(req.params.id)
-        .then((user: User) => user
+        .then((user: User | null) => user
           ? res.json(user)
           : next({statusCode: 404}))
         .catch(next)
