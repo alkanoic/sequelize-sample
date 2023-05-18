@@ -1,0 +1,26 @@
+{
+  "name": "repository-mode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r ts-node/register index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.16.0",
+    "@types/strong-error-handler": "^2.3.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql2": "^3.3.1",
+    "sequelize": "^5.22.5",
+    "sequelize-typescript": "^1.0.0-alpha.9",
+    "strong-error-handler": "^3.5.0"
+  }
+}
