@@ -15,5 +15,5 @@ export class News extends Model {
 
   @Column(DataType.TEXT) name!: string;
 
-  @AllowNull @Column(DataType.TEXT) content: string | undefined;
+  @AllowNull @Column(DataType.TEXT("long")) content: string | undefined;
 }
