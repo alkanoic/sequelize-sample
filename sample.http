@@ -14,3 +14,45 @@ content-type: application/json
 {
     "name": "name1"
 }
+
+### GET baseTables
+
+http://localhost:5000/basetables
+
+### GET baseTables
+
+http://localhost:5000/basetables/52f825a7-031b-41ce-b7f8-b67e9d421840
+
+### POST baseTables
+
+POST http://localhost:5000/basetables
+content-type: application/json
+
+{
+    "baseTableId": "52f825a7-031b-41ce-b7f8-b67e9d421840",
+    "baseTableId1": 1,
+    "baseTableId2": 1,
+    "baseName": "baseName"
+}
+
+### GET baseDetails
+
+http://localhost:5000/basedetails
+
+### GET baseDetails
+
+http://localhost:5000/basedetails/aafeaf7d-5c89-43a1-bea7-049e5e2e8c4a
+
+### POST baseDetails
+
+POST http://localhost:5000/basedetails
+content-type: application/json
+
+{
+    "baseDetailId": "aafeaf7d-5c89-43a1-bea7-049e5e2e8c4a",
+    "baseTableId": "52f825a7-031b-41ce-b7f8-b67e9d421840",
+    "baseTableId1": 1,
+    "baseTableId2": 1,
+    "baseTableId3": 1,
+    "detailName": "detailName"
+}
